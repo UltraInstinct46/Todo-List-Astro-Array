@@ -1,5 +1,6 @@
 import { TodoListResource } from "../api/routes/resource";
-const apiUrl = 'https://crudcrud.com/api/a38572bd947043e7bbf637bd956a9846';
+import {api} from '../scripts/config';
+const apiUrl = `https://crudcrud.com/api/${api}`;
 const todoListResource = new TodoListResource(apiUrl);
 const titleInput = document.getElementById('title');
 const textInput = document.getElementById('text');

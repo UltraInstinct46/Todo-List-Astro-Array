@@ -3,8 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import './api/routes/api';
 import './api/routes/resource';
+import {api} from '../pages/scripts/config';
 export const tags = ["astro", "successes", "community", "setbacks", "learning in public"];
-const response = await fetch("https://crudcrud.com/api/a38572bd947043e7bbf637bd956a9846/todo-list");
+const response = await fetch("https://crudcrud.com/api/"+api+"/todo-list");
 const data = await response.json();
 ---
 
