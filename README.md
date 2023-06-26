@@ -1,3 +1,9 @@
+# Instruction
+Put your api key into :
+```
+src/pages/scripts/config.js
+```
+
 # Astro Starter Kit: Basics
 
 ```
